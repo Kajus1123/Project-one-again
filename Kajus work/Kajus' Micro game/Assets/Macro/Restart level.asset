@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Restart level
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"Other","label":null,"summary":null,"hideLabel":false},{"key":"Target","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"System.String","key":"Tag","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.GameObject","key":"Object","label":null,"summary":null,"hideLabel":false}],"title":"Restart
+      level","summary":null,"pan":{"x":-113.0,"y":200.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-439.0,"y":-122.0},"guid":"9d26b050-a853-435d-8e41-61b142c21a4c","$version":"A","$type":"Unity.VisualScripting.OnCollisionEnter2D","$id":"13"},{"defaultValues":{},"position":{"x":482.0,"y":-140.0},"guid":"d2c61235-cf49-48ba-9417-8531e6e44439","$version":"A","$type":"Unity.VisualScripting.If","$id":"15"},{"defaultValues":{},"position":{"x":-155.0,"y":161.0},"guid":"3b4c8ae3-ff02-42fa-af99-7f5025df3d80","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"17"},{"defaultValues":{},"position":{"x":726.0,"y":186.0},"guid":"ac406626-4100-4dd8-9c16-645f40ea6d0f","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"19"},{"chainable":false,"parameterNames":["tag"],"member":{"name":"CompareTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%tag":{"$content":"","$type":"System.String"}},"position":{"x":103.0,"y":73.0},"guid":"42a599d6-c937-4089-9df8-ed6fb8656cc2","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"21"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"88147163-6e6d-4cf4-8eb7-69966c5587e1","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"19"},"destinationKey":"Other","guid":"8348bbdb-6287-474c-a870-d12c351bb8d1","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"19"},"destinationKey":"Target","guid":"8130c966-32d5-437e-9467-ee5c9992bd38","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"collider","destinationUnit":{"$ref":"21"},"destinationKey":"target","guid":"1fe702e1-5b22-45d0-9847-68f3cba76daa","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"condition","guid":"25b72140-a74e-46a4-a72e-a20f3140f990","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"collider","destinationUnit":{"$ref":"19"},"destinationKey":"Object","guid":"faa416aa-b7d5-43fc-8ee0-b5d808c0de71","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"Tag","destinationUnit":{"$ref":"21"},"destinationKey":"%tag","guid":"4cf00c52-16e7-46fc-acfb-3d986e294c16","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
